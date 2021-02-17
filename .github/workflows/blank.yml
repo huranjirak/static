@@ -34,11 +34,238 @@ jobs:
         asset_name: 7.tar
         asset_content_type: application/octet-stream   
         
-    #~ - name: Generate the artifacts
-      #~ uses: skx/github-action-build@master
-    #~ - name: Upload the artifacts
-      #~ uses: skx/github-action-publish-binaries@master
-      #~ env:
-        #~ GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #~ with:
-        #~ args: '*'
+
+    - id: upload-release-asset1
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: aria2c
+        asset_name: aria2c
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset2
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: cf
+        asset_name: cf
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset3
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: cordless
+        asset_name: cordless
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset4
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: cwebp
+        asset_name: cwebp
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset5
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: drive
+        asset_name: drive
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset6
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ec
+        asset_name: ec
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset7
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: elinks-latest
+        asset_name: elinks-latest
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset8
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: elinks-python
+        asset_name: elinks-python
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset9
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: elinks-python-alwaysdata
+        asset_name: elinks-python-alwaysdata
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset10
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: elinks-python-xshell
+        asset_name: elinks-python-xshell
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset11
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: google-cloud-sdk.tar.xz
+        asset_name: google-cloud-sdk.tar.xz
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset12
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: heroku-standalone-dir-compressed.tar.xz
+        asset_name: heroku-standalone-dir-compressed.tar.xz
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset13
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: libcrypto.so.1.1
+        asset_name: libcrypto.so.1.1
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset14
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: libssl.so.1.1
+        asset_name: libssl.so.1.1
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset15
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: mediafire-shell
+        asset_name: mediafire-shell
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset16
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: model.tar.xz
+        asset_name: model.tar.xz
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset17
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: node
+        asset_name: node
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset18
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: phantomjs
+        asset_name: phantomjs
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset19
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: python_scripts.tar.xz
+        asset_name: python_scripts.tar.xz
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset20
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: rclone
+        asset_name: rclone
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset21
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: scalingo
+        asset_name: scalingo
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset22
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: screen
+        asset_name: screen
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset23
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: sem
+        asset_name: sem
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset24
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: testdata.tar
+        asset_name: testdata.tar
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset25
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: upx
+        asset_name: upx
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset26
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: vmaf_v0.6.1.pkl
+        asset_name: vmaf_v0.6.1.pkl
+        asset_content_type: application/octet-stream 
