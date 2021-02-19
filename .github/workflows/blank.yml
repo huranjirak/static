@@ -269,3 +269,21 @@ jobs:
         asset_path: vmaf_v0.6.1.pkl
         asset_name: vmaf_v0.6.1.pkl
         asset_content_type: application/octet-stream 
+    - id: upload-release-asset27
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: parg
+        asset_name: parg
+        asset_content_type: application/octet-stream 
+    - id: upload-release-asset28
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ffprobe
+        asset_name: ffprobe
+        asset_content_type: application/octet-stream 
